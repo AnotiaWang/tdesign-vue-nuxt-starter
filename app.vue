@@ -6,6 +6,7 @@
 
 <script setup lang="ts">
   import Layout from '@/layouts/default.vue'
+  import 'tdesign-vue-next/es/style/index.css'
 
   const colorMode = useColorMode()
 
