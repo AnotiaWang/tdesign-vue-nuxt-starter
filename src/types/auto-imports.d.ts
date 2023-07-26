@@ -96,6 +96,7 @@ declare global {
   const useMutation: typeof import('@vue/apollo-composable')['useMutation']
   const useQuery: typeof import('@vue/apollo-composable')['useQuery']
   const useSlots: typeof import('vue')['useSlots']
+  const useThemeStore: typeof import('../hooks/useTheme')['useThemeStore']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
   const watchPostEffect: typeof import('vue')['watchPostEffect']
@@ -105,11 +106,35 @@ declare global {
 import { UnwrapRef } from 'vue'
 declare module 'vue' {
   interface ComponentCustomProperties {
-
+    readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
+    readonly createPinia: UnwrapRef<typeof import('pinia')['createPinia']>
+    readonly defineStore: UnwrapRef<typeof import('pinia')['defineStore']>
+    readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
+    readonly mapActions: UnwrapRef<typeof import('pinia')['mapActions']>
+    readonly mapGetters: UnwrapRef<typeof import('pinia')['mapGetters']>
+    readonly mapState: UnwrapRef<typeof import('pinia')['mapState']>
+    readonly mapStores: UnwrapRef<typeof import('pinia')['mapStores']>
+    readonly mapWritableState: UnwrapRef<typeof import('pinia')['mapWritableState']>
+    readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
+    readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>
+    readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
+    readonly useThemeStore: UnwrapRef<typeof import('../hooks/useTheme')['useThemeStore']>
   }
 }
 declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
-
+    readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
+    readonly createPinia: UnwrapRef<typeof import('pinia')['createPinia']>
+    readonly defineStore: UnwrapRef<typeof import('pinia')['defineStore']>
+    readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
+    readonly mapActions: UnwrapRef<typeof import('pinia')['mapActions']>
+    readonly mapGetters: UnwrapRef<typeof import('pinia')['mapGetters']>
+    readonly mapState: UnwrapRef<typeof import('pinia')['mapState']>
+    readonly mapStores: UnwrapRef<typeof import('pinia')['mapStores']>
+    readonly mapWritableState: UnwrapRef<typeof import('pinia')['mapWritableState']>
+    readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
+    readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>
+    readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
+    readonly useThemeStore: UnwrapRef<typeof import('../hooks/useTheme')['useThemeStore']>
   }
 }

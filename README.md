@@ -5,6 +5,7 @@
 本模板仓库使用 [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) (Vue 3) 和 [TDesign Vue Next](https://tdesign.tencent.com/vue-next) 组件库。
 
 除此之外，还使用了以下依赖：
+
 - [Nuxt UI](https://ui.nuxtlabs.com): 基于 Tailwind CSS 的 UI 组件库
 - [Nuxt Color Mode](https://color-mode.nuxtjs.org/): 深色/浅色模式
 - ESLint: 代码风格检查
@@ -22,6 +23,27 @@
 ├── public      # 静态资源
 ├── src
 │   ├── types   # unplugin 插件自动生成的类型，项目中的其它类型也放在这里
+```
+
+## 自定义主题
+
+TDesign 支持 [自定义主题](https://tdesign.tencent.com/vue-next/custom-theme)。按照以下步骤修改主题：
+
+1. 在文档页面，点击页面底部的刷子图标，进入主题编辑器。调整完想要的效果后，点击下载按钮，保存 CSS 文件到本地。
+2. 将 CSS 文件移动到 `public/styles` 文件夹下，并命名为 `tdesign-theme-{name}.css`，其中 `name` 是你给主题取的名字。
+3. 在 `src/hooks/useTheme.ts` 中，修改:
+
+```ts
+type Theme = 'default' | 'test' // 添加/修改成你自己的主题名
+```
+
+如有需要，可以配置 defineStore 部分中的 `theme` 变量为你想要的初始主题，默认为 `default`。
+
+然后就可以在代码中调用了：
+```ts
+const theme = useThemeStore()
+
+theme.setTheme('default')
 ```
 
 ## Setup

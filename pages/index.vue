@@ -18,6 +18,10 @@
         </template>
       </TButton>
     </div>
+    <div class="flex items-center gap-x-4">
+      <TButton @click="theme.setTheme('default')">默认主题</TButton>
+      <TButton @click="theme.setTheme('test')">主题 1</TButton>
+    </div>
     <div class="flex items-center gap-x-5">
       <TButton>按钮示例</TButton>
       <TButton theme="warning" loading>按钮示例</TButton>
@@ -39,6 +43,8 @@
 </template>
 
 <script setup lang="ts">
+  const theme = useThemeStore()
+
   const tags = $ref<string[]>(['Vue', 'React', 'Angular'])
   let date: Date
   let isLoading = $ref(true)

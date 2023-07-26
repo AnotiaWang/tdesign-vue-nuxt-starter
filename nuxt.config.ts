@@ -35,7 +35,7 @@ export default defineNuxtConfig({
         ],
       }),
       AutoImport({
-        imports: [],
+        imports: ['pinia'],
         dts: 'src/types/auto-imports.d.ts',
         dirs: [
           'src/hooks/**',
