@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   watch: ['./tailwind.config.js'],
   colorMode: {
     preference: 'light',
+    classSuffix: '',
   },
   vite: {
     vue: {
