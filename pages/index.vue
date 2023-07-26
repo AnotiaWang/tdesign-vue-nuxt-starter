@@ -34,16 +34,18 @@
         <template #label> 你喜欢的前端框架： </template>
       </TTagInput>
     </div>
-    <TAlert :theme="alertTheme" close>{{ new Date() }}</TAlert>
+    <TAlert :theme="alertTheme" close>{{ date }}</TAlert>
   </div>
 </template>
 
 <script setup lang="ts">
   const tags = $ref<string[]>(['Vue', 'React', 'Angular'])
+  let date: Date
   let isLoading = $ref(true)
   let alertTheme = $ref<'success' | 'warning' | 'error' | 'info'>('success')
 
   onMounted(() => {
+    date = new Date()
     setInterval(() => {
       isLoading = !isLoading
       if (alertTheme === 'success') {

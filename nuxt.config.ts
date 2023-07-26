@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '@vue-macros/nuxt',
     '@pinia/nuxt',
     'nuxt-simple-robots',
-    '@nuxthq/ui',
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
   ],
   plugins: [],
