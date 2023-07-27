@@ -6,7 +6,7 @@
 
 除此之外，还使用了以下依赖：
 
-- [Nuxt UI](https://ui.nuxtlabs.com): 基于 Tailwind CSS 的 UI 组件库
+- Tailwind CSS
 - [Nuxt Color Mode](https://color-mode.nuxtjs.org/): 深色/浅色模式
 - ESLint: 代码风格检查
 - [Vue Macros](https://vue-macros.sxzz.moe): 启用 `$ref`、`$computed` 等语法糖

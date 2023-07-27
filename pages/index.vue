@@ -45,7 +45,7 @@
 <script setup lang="ts">
   const theme = useThemeStore()
 
-  const tags = $ref<string[]>(['Vue', 'React', 'Angular'])
+  const tags = $ref(['Vue', 'React', 'Angular'])
   let date: Date
   let isLoading = $ref(true)
   let alertTheme = $ref<'success' | 'warning' | 'error' | 'info'>('success')
