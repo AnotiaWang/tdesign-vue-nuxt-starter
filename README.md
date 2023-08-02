@@ -1,6 +1,6 @@
 # TDesign Vue + Nuxt Starter
 
-![](https://s1.ax1x.com/2023/07/26/pCjqUMD.png)
+![](https://s1.ax1x.com/2023/08/02/pPPiFo9.png)
 
 本模板仓库使用 [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) (Vue 3) 和 [TDesign Vue Next](https://tdesign.tencent.com/vue-next) 组件库。
 
