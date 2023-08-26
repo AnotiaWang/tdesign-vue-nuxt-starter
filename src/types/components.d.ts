@@ -10,10 +10,8 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TAlert: typeof import('tdesign-vue-next')['Alert']
-    TAutoComplete: typeof import('tdesign-vue-next')['AutoComplete']
     TButton: typeof import('tdesign-vue-next')['Button']
     TIcon: typeof import('tdesign-vue-next')['Icon']
-    TInputAdornment: typeof import('tdesign-vue-next')['InputAdornment']
     TSwitch: typeof import('tdesign-vue-next')['Switch']
     TTagInput: typeof import('tdesign-vue-next')['TagInput']
   }
