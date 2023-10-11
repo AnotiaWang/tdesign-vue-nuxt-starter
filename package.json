@@ -1,6 +1,5 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "tdesign-vue-nuxt-starter",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,27 +8,27 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.3",
-    "@nuxtjs/color-mode": "^3.3.0",
-    "@nuxtjs/i18n": "8.0.0-beta.12",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@types/node": "^20.6.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
-    "eslint": "^8.49.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-vue": "^9.16.1",
-    "nuxt": "^3.6.5",
-    "nuxt-simple-robots": "^3.1.2",
-    "nuxt-simple-sitemap": "^3.3.1",
-    "unplugin-auto-import": "^0.16.6",
-    "unplugin-vue-components": "^0.25.2",
-    "vue-eslint-parser": "^9.3.1"
+    "@nuxt/devtools": "1.0.6",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/i18n": "8.0.0",
+    "@nuxtjs/tailwindcss": "^6.10.3",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-vue": "^9.19.2",
+    "nuxt": "^3.9.1",
+    "nuxt-simple-robots": "4.0.0-rc.9",
+    "nuxt-simple-sitemap": "^4.4.1",
+    "unplugin-auto-import": "^0.17.3",
+    "unplugin-vue-components": "^0.26.0",
+    "vue-eslint-parser": "^9.3.2"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
-    "@vue-macros/nuxt": "^1.8.1",
-    "tdesign-vue-next": "^1.5.5"
+    "@pinia/nuxt": "^0.5.1",
+    "@vue-macros/nuxt": "^1.9.19",
+    "tdesign-vue-next": "^1.7.2"
   }
 }
