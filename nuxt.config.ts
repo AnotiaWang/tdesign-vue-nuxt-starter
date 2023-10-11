@@ -11,12 +11,17 @@ export default defineNuxtConfig({
     'nuxt-simple-robots',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxtjs/sitemap',
   ],
   plugins: [],
   watch: ['./tailwind.config.js'],
   colorMode: {
     preference: 'light',
     classSuffix: '',
+  },
+  // Sitemap module configuration: https://nuxtseo.com/site-config/getting-started/how-it-works
+  site: {
+    url: 'https://tdesign-vue-nuxt-starter.vercel.app', // TODO: Your website URL
   },
   vite: {
     vue: {
