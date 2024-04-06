@@ -45,23 +45,23 @@
 <script setup lang="ts">
   const theme = useThemeStore()
 
-  const tags = $ref(['Vue', 'React', 'Angular'])
+  const tags = ref(['Vue', 'React', 'Angular'])
   let date: Date
-  let isLoading = $ref(true)
-  let alertTheme = $ref<'success' | 'warning' | 'error' | 'info'>('success')
+  let isLoading = ref(true)
+  let alertTheme = ref<'success' | 'warning' | 'error' | 'info'>('success')
 
   onMounted(() => {
     date = new Date()
     setInterval(() => {
-      isLoading = !isLoading
-      if (alertTheme === 'success') {
-        alertTheme = 'warning'
-      } else if (alertTheme === 'warning') {
-        alertTheme = 'error'
-      } else if (alertTheme === 'error') {
-        alertTheme = 'info'
+      isLoading.value = !isLoading.value
+      if (alertTheme.value === 'success') {
+        alertTheme.value = 'warning'
+      } else if (alertTheme.value === 'warning') {
+        alertTheme.value = 'error'
+      } else if (alertTheme.value === 'error') {
+        alertTheme.value = 'info'
       } else {
-        alertTheme = 'success'
+        alertTheme.value = 'success'
       }
     }, 2000)
   })

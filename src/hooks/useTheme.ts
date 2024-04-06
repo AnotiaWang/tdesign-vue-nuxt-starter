@@ -3,20 +3,20 @@ type Theme = 'default' | 'test'
 const themeStorageKey = 'tdesign-vue-next-theme'
 
 export const useThemeStore = defineStore('theme', () => {
-  let theme = $ref<Theme>('default')
+  const theme = ref<Theme>('default')
 
   const setTheme = (_theme: Theme) => {
-    theme = _theme
+    theme.value = _theme
   }
 
   onMounted(() => {
     const storageValue = localStorage.getItem(themeStorageKey)
 
-    if (storageValue) theme = storageValue as Theme
+    if (storageValue) theme.value = storageValue as Theme
     const styleElement = document.createElement('link')
 
     watchEffect(() => {
-      localStorage.setItem(themeStorageKey, theme)
+      localStorage.setItem(themeStorageKey, theme.value)
       styleElement.type = 'text/css'
       styleElement.rel = 'stylesheet'
       styleElement.href = `/styles/tdesign-theme-${theme}.css?t=${Date.now()}`

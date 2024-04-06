@@ -6,7 +6,6 @@ import { TDesignResolver } from 'unplugin-vue-components/resolvers'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@vue-macros/nuxt',
     '@pinia/nuxt',
     'nuxt-simple-robots',
     '@nuxtjs/tailwindcss',

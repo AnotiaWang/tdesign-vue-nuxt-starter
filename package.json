@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
-    "@vue-macros/nuxt": "^1.9.28",
     "tdesign-vue-next": "^1.9.3"
   }
 }
