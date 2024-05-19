@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   },
   // Sitemap module configuration: https://nuxtseo.com/site-config/getting-started/how-it-works
   site: {
-    url: 'https://tdesign-vue-nuxt-starter.vercel.app', // TODO: Your website URL
+    url: 'https://tdesign-vue-nuxt-starter.vercel.app', // FIXME: Your website URL
   },
   vite: {
     vue: {
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     },
     plugins: [
       Components({
-        dts: 'src/types/components.d.ts',
+        dts: 'types/components.d.ts',
         resolvers: [
           TDesignResolver({
             library: 'vue-next',
@@ -40,14 +40,8 @@ export default defineNuxtConfig({
       }),
       AutoImport({
         imports: ['pinia'],
-        dts: 'src/types/auto-imports.d.ts',
-        dirs: [
-          'src/hooks/**',
-          'src/stores',
-          'src/constants',
-          'src/utils/**',
-          'src/layouts',
-        ],
+        dts: 'types/auto-imports.d.ts',
+        dirs: ['hooks/**', 'stores', 'constants', 'utils/**', 'layouts'],
         vueTemplate: true,
         resolvers: [
           TDesignResolver({
