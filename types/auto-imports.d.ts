@@ -8,16 +8,16 @@ declare global {
   const ApolloError: (typeof import('@apollo/client/core'))['ApolloError']
   const EffectScope: (typeof import('vue'))['EffectScope']
   const NetworkStatus: (typeof import('@apollo/client/core'))['NetworkStatus']
-  const acceptHMRUpdate: (typeof import('pinia'))['acceptHMRUpdate']
+  const acceptHMRUpdate: typeof import('pinia')['acceptHMRUpdate']
   const computed: (typeof import('vue'))['computed']
   const createApp: (typeof import('vue'))['createApp']
-  const createPinia: (typeof import('pinia'))['createPinia']
+  const createPinia: typeof import('pinia')['createPinia']
   const customRef: (typeof import('vue'))['customRef']
   const defineAsyncComponent: (typeof import('vue'))['defineAsyncComponent']
   const defineComponent: (typeof import('vue'))['defineComponent']
-  const defineStore: (typeof import('pinia'))['defineStore']
+  const defineStore: typeof import('pinia')['defineStore']
   const effectScope: (typeof import('vue'))['effectScope']
-  const getActivePinia: (typeof import('pinia'))['getActivePinia']
+  const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentInstance: (typeof import('vue'))['getCurrentInstance']
   const getCurrentScope: (typeof import('vue'))['getCurrentScope']
   const h: (typeof import('vue'))['h']
@@ -26,11 +26,11 @@ declare global {
   const isReactive: (typeof import('vue'))['isReactive']
   const isReadonly: (typeof import('vue'))['isReadonly']
   const isRef: (typeof import('vue'))['isRef']
-  const mapActions: (typeof import('pinia'))['mapActions']
-  const mapGetters: (typeof import('pinia'))['mapGetters']
-  const mapState: (typeof import('pinia'))['mapState']
-  const mapStores: (typeof import('pinia'))['mapStores']
-  const mapWritableState: (typeof import('pinia'))['mapWritableState']
+  const mapActions: typeof import('pinia')['mapActions']
+  const mapGetters: typeof import('pinia')['mapGetters']
+  const mapState: typeof import('pinia')['mapState']
+  const mapStores: typeof import('pinia')['mapStores']
+  const mapWritableState: typeof import('pinia')['mapWritableState']
   const markRaw: (typeof import('vue'))['markRaw']
   const nextTick: (typeof import('vue'))['nextTick']
   const onActivated: (typeof import('vue'))['onActivated']
@@ -76,12 +76,12 @@ declare global {
   const readonly: (typeof import('vue'))['readonly']
   const ref: (typeof import('vue'))['ref']
   const resolveComponent: (typeof import('vue'))['resolveComponent']
-  const setActivePinia: (typeof import('pinia'))['setActivePinia']
-  const setMapStoreSuffix: (typeof import('pinia'))['setMapStoreSuffix']
+  const setActivePinia: typeof import('pinia')['setActivePinia']
+  const setMapStoreSuffix: typeof import('pinia')['setMapStoreSuffix']
   const shallowReactive: (typeof import('vue'))['shallowReactive']
   const shallowReadonly: (typeof import('vue'))['shallowReadonly']
   const shallowRef: (typeof import('vue'))['shallowRef']
-  const storeToRefs: (typeof import('pinia'))['storeToRefs']
+  const storeToRefs: typeof import('pinia')['storeToRefs']
   const toRaw: (typeof import('vue'))['toRaw']
   const toRef: (typeof import('vue'))['toRef']
   const toRefs: (typeof import('vue'))['toRefs']
@@ -96,7 +96,7 @@ declare global {
   const useMutation: (typeof import('@vue/apollo-composable'))['useMutation']
   const useQuery: (typeof import('@vue/apollo-composable'))['useQuery']
   const useSlots: (typeof import('vue'))['useSlots']
-  const useThemeStore: (typeof import('../hooks/useTheme'))['useThemeStore']
+  const useThemeStore: typeof import('../hooks/useTheme')['useThemeStore']
   const watch: (typeof import('vue'))['watch']
   const watchEffect: (typeof import('vue'))['watchEffect']
   const watchPostEffect: (typeof import('vue'))['watchPostEffect']
@@ -107,60 +107,36 @@ import { UnwrapRef } from 'vue'
 declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
-    readonly acceptHMRUpdate: UnwrapRef<
-      (typeof import('pinia'))['acceptHMRUpdate']
-    >
-    readonly createPinia: UnwrapRef<(typeof import('pinia'))['createPinia']>
-    readonly defineStore: UnwrapRef<(typeof import('pinia'))['defineStore']>
-    readonly getActivePinia: UnwrapRef<
-      (typeof import('pinia'))['getActivePinia']
-    >
-    readonly mapActions: UnwrapRef<(typeof import('pinia'))['mapActions']>
-    readonly mapGetters: UnwrapRef<(typeof import('pinia'))['mapGetters']>
-    readonly mapState: UnwrapRef<(typeof import('pinia'))['mapState']>
-    readonly mapStores: UnwrapRef<(typeof import('pinia'))['mapStores']>
-    readonly mapWritableState: UnwrapRef<
-      (typeof import('pinia'))['mapWritableState']
-    >
-    readonly setActivePinia: UnwrapRef<
-      (typeof import('pinia'))['setActivePinia']
-    >
-    readonly setMapStoreSuffix: UnwrapRef<
-      (typeof import('pinia'))['setMapStoreSuffix']
-    >
-    readonly storeToRefs: UnwrapRef<(typeof import('pinia'))['storeToRefs']>
-    readonly useThemeStore: UnwrapRef<
-      (typeof import('../hooks/useTheme'))['useThemeStore']
-    >
+    readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
+    readonly createPinia: UnwrapRef<typeof import('pinia')['createPinia']>
+    readonly defineStore: UnwrapRef<typeof import('pinia')['defineStore']>
+    readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
+    readonly mapActions: UnwrapRef<typeof import('pinia')['mapActions']>
+    readonly mapGetters: UnwrapRef<typeof import('pinia')['mapGetters']>
+    readonly mapState: UnwrapRef<typeof import('pinia')['mapState']>
+    readonly mapStores: UnwrapRef<typeof import('pinia')['mapStores']>
+    readonly mapWritableState: UnwrapRef<typeof import('pinia')['mapWritableState']>
+    readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
+    readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>
+    readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
+    readonly useThemeStore: UnwrapRef<typeof import('../hooks/useTheme')['useThemeStore']>
   }
 }
 declare module '@vue/runtime-core' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
-    readonly acceptHMRUpdate: UnwrapRef<
-      (typeof import('pinia'))['acceptHMRUpdate']
-    >
-    readonly createPinia: UnwrapRef<(typeof import('pinia'))['createPinia']>
-    readonly defineStore: UnwrapRef<(typeof import('pinia'))['defineStore']>
-    readonly getActivePinia: UnwrapRef<
-      (typeof import('pinia'))['getActivePinia']
-    >
-    readonly mapActions: UnwrapRef<(typeof import('pinia'))['mapActions']>
-    readonly mapGetters: UnwrapRef<(typeof import('pinia'))['mapGetters']>
-    readonly mapState: UnwrapRef<(typeof import('pinia'))['mapState']>
-    readonly mapStores: UnwrapRef<(typeof import('pinia'))['mapStores']>
-    readonly mapWritableState: UnwrapRef<
-      (typeof import('pinia'))['mapWritableState']
-    >
-    readonly setActivePinia: UnwrapRef<
-      (typeof import('pinia'))['setActivePinia']
-    >
-    readonly setMapStoreSuffix: UnwrapRef<
-      (typeof import('pinia'))['setMapStoreSuffix']
-    >
-    readonly storeToRefs: UnwrapRef<(typeof import('pinia'))['storeToRefs']>
-    readonly useThemeStore: UnwrapRef<
-      (typeof import('../hooks/useTheme'))['useThemeStore']
-    >
+    readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
+    readonly createPinia: UnwrapRef<typeof import('pinia')['createPinia']>
+    readonly defineStore: UnwrapRef<typeof import('pinia')['defineStore']>
+    readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
+    readonly mapActions: UnwrapRef<typeof import('pinia')['mapActions']>
+    readonly mapGetters: UnwrapRef<typeof import('pinia')['mapGetters']>
+    readonly mapState: UnwrapRef<typeof import('pinia')['mapState']>
+    readonly mapStores: UnwrapRef<typeof import('pinia')['mapStores']>
+    readonly mapWritableState: UnwrapRef<typeof import('pinia')['mapWritableState']>
+    readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
+    readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>
+    readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
+    readonly useThemeStore: UnwrapRef<typeof import('../hooks/useTheme')['useThemeStore']>
   }
 }
