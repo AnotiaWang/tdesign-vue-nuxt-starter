@@ -6,10 +6,16 @@
 
 除此之外，还使用了以下依赖：
 
-- Tailwind CSS
+- [Tailwind CSS](https://tailwindcss.com/)
 - [Nuxt Color Mode](https://color-mode.nuxtjs.org/): 深色/浅色模式
-- ESLint: 代码风格检查
-- unplugin-auto-import 和 unplugin-vue-components: 自动导入 TDesign Vue Next 的组件以实现 [tree shaking](https://en.wikipedia.org/wiki/Tree_shaking)
+- ESLint + Prettier: 代码风格检查 + 美化
+- [unplugin-auto-import 和 unplugin-vue-components](https://unplugin.unjs.io): 自动导入 TDesign Vue Next 的组件以实现 [tree shaking](https://en.wikipedia.org/wiki/Tree_shaking)
+
+## 快速使用本模板
+
+```bash
+npx -y nuxi init -t gh:AnotiaWang/tdesign-vue-nuxt-starter <项目名>
+```
 
 ## 目录结构
 
