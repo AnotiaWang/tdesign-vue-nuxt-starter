@@ -13,7 +13,9 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
   ],
   plugins: [],
-  watch: ['./tailwind.config.js'],
+  tailwindcss: {
+    configPath: './app/tailwind.config'
+  },
   colorMode: {
     preference: 'light',
     classSuffix: '',
@@ -51,4 +53,8 @@ export default defineNuxtConfig({
       }),
     ],
   },
+  future: {
+    // 启用 Nuxt 4 功能前瞻
+    compatibilityVersion: 4
+  }
 })

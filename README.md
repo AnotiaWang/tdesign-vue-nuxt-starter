@@ -1,5 +1,7 @@
 # TDesign Vue + Nuxt Starter
 
+> [!NOTE] Nuxt 4 即将发布，此模板的维护重心将会转向 Nuxt 4，请留意官方的 [Nuxt 3 -> 4 迁移说明](https://nuxt.com/docs/getting-started/upgrade#migrating-to-nuxt-4)。Nuxt 3 版本的模板将会移动到 [`nuxt3`](https://github.com/AnotiaWang/tdesign-vue-nuxt-starter/tree/nuxt3) 分支。
+
 ![](https://s21.ax1x.com/2024/06/15/pkwSjC6.png)
 
 本模板仓库使用 [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) (Vue 3) 和 [TDesign Vue Next](https://tdesign.tencent.com/vue-next) 组件库。
@@ -14,18 +16,26 @@
 ## 快速使用本模板
 
 ```bash
+# 使用 main 分支
 npx -y nuxi init -t gh:AnotiaWang/tdesign-vue-nuxt-starter <项目名>
+# 如要继续使用 Nuxt 3 版本，请使用 `nuxt3` 分支
+npx -y nuxi init -t gh:AnotiaWang/tdesign-vue-nuxt-starter#nuxt3 <项目名>
 ```
 
 ## 目录结构
 
 ```
 .
-├── components  # 组件
-├── layouts     # 布局，一般用其中的 default.vue 即可
-├── pages       # 页面，每个 SFC 代表一个页面，可用文件夹嵌套
-├── public      # 静态资源
-├── types       # 存放 TypeScript 类型定义，目前包含了 unplugin 自动生成的类型
+├── app             # 前端相关
+│   ├── components  # 全局组件
+│   ├── hooks       # 自定义 hooks
+│   ├── layouts     # Nuxt 布局
+│   ├── pages       # 页面，每个 SFC 代表一个页面，可用文件夹嵌套
+│   └── types       # TypeScript 类型定义，目前包含了 unplugin 自动生成的类型
+├── node_modules
+├── public          # 静态资源
+│   └── styles
+└── server          # 后端相关
 ```
 
 ## 自定义主题
