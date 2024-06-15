@@ -14,7 +14,7 @@
 ## 快速使用本模板
 
 ```bash
-npx -y nuxi init -t gh:AnotiaWang/tdesign-vue-nuxt-starter <项目名>
+npx -y nuxi init -t gh:AnotiaWang/tdesign-vue-nuxt-starter#nuxt3 <项目名>
 ```
 
 ## 目录结构
