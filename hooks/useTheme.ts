@@ -19,7 +19,7 @@ export const useThemeStore = defineStore('theme', () => {
       localStorage.setItem(themeStorageKey, theme.value)
       styleElement.type = 'text/css'
       styleElement.rel = 'stylesheet'
-      styleElement.href = `/styles/tdesign-theme-${theme}.css?t=${Date.now()}`
+      styleElement.href = `/styles/tdesign-theme-${theme.value}.css?t=${Date.now()}`
       if (styleElement.parentElement === document.head) {
         document.head.removeChild(styleElement)
       }
