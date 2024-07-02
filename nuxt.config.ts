@@ -5,6 +5,7 @@ import { TDesignResolver } from 'unplugin-vue-components/resolvers'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     '@pinia/nuxt',
     'nuxt-simple-robots',
@@ -12,18 +13,23 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
   ],
+
   plugins: [],
+
   tailwindcss: {
-    configPath: './app/tailwind.config'
+    configPath: './app/tailwind.config',
   },
+
   colorMode: {
     preference: 'light',
     classSuffix: '',
   },
+
   // Sitemap module configuration: https://nuxtseo.com/site-config/getting-started/how-it-works
   site: {
     url: 'https://tdesign-vue-nuxt-starter.vercel.app', // FIXME: Your website URL
   },
+
   vite: {
     vue: {
       script: {
@@ -53,8 +59,11 @@ export default defineNuxtConfig({
       }),
     ],
   },
+
   future: {
     // 启用 Nuxt 4 功能前瞻
-    compatibilityVersion: 4
-  }
+    compatibilityVersion: 4,
+  },
+
+  compatibilityDate: '2024-07-19',
 })
