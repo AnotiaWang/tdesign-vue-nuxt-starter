@@ -1,6 +1,7 @@
 # TDesign Vue + Nuxt Starter
 
-> [!NOTE] Nuxt 4 即将发布，此模板的维护重心将会转向 Nuxt 4，请留意官方的 [Nuxt 3 -> 4 迁移说明](https://nuxt.com/docs/getting-started/upgrade#migrating-to-nuxt-4)。Nuxt 3 版本的模板将会移动到 [`nuxt3`](https://github.com/AnotiaWang/tdesign-vue-nuxt-starter/tree/nuxt3) 分支。
+> [!NOTE] 
+> Nuxt 4 即将发布，此模板的维护重心将会转向 Nuxt 4，请留意官方的 [Nuxt 3 -> 4 迁移说明](https://nuxt.com/docs/getting-started/upgrade#migrating-to-nuxt-4)。Nuxt 3 版本的模板将会移动到 [`nuxt3`](https://github.com/AnotiaWang/tdesign-vue-nuxt-starter/tree/nuxt3) 分支。
 
 ![](https://s21.ax1x.com/2024/06/15/pkwSjC6.png)
 
