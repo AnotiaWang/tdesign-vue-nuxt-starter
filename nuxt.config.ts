@@ -8,10 +8,11 @@ export default defineNuxtConfig({
 
   modules: [
     '@pinia/nuxt',
-    'nuxt-simple-robots',
+    '@nuxtjs/robots',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
+    '@nuxt/eslint',
   ],
 
   plugins: [],
@@ -27,7 +28,7 @@ export default defineNuxtConfig({
 
   // Sitemap module configuration: https://nuxtseo.com/site-config/getting-started/how-it-works
   site: {
-    url: 'https://tdesign-vue-nuxt-starter.vercel.app', // FIXME: Your website URL
+    url: 'https://tdesign-vue-nuxt-starter.ataw.top', // FIXME: Your website URL
   },
 
   vite: {

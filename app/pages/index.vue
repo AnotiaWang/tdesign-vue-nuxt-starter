@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col items-center py-10 gap-y-8">
-    <span class="text-[30px]">Nuxt & TDesign Vue Next</span>
+  <div class="flex flex-col items-center px-4 py-10 gap-y-8 h-full">
+    <h1 class="text-[26px]">Nuxt & TDesign Vue Next</h1>
     <div class="space-x-2">
       <TButton
         ghost
@@ -22,16 +22,16 @@
       <TButton @click="theme.setTheme('default')">默认主题</TButton>
       <TButton @click="theme.setTheme('test')">主题 1</TButton>
     </div>
-    <div class="flex items-center gap-x-5">
+    <div class="grid grid-cols-2 sm:flex flex-row items-center gap-2">
       <TButton>按钮示例</TButton>
       <TButton theme="warning" loading>按钮示例</TButton>
       <TButton theme="danger" disabled>按钮示例</TButton>
       <TButton theme="success" variant="outline">按钮示例</TButton>
     </div>
 
-    <div class="flex items-center gap-x-4">
+    <div class="flex flex-col sm:flex-row items-center gap-4">
       <!-- tag-name 和 TagName 写法都可以 -->
-      <t-switch class="flex-none" v-model="isLoading" size="large">
+      <t-switch v-model="isLoading" class="flex-none" size="large">
         <template #label> 加载中 </template>
       </t-switch>
       <TTagInput v-model="tags" drag-sort clearable>
@@ -39,6 +39,17 @@
       </TTagInput>
     </div>
     <TAlert :theme="alertTheme" close>{{ date }}</TAlert>
+
+    <div class="mt-auto">
+      <a
+        href="https://zeabur.com?referralCode=AnotiaWang&utm_source=AnotiaWang&utm_campaign=oss"
+      >
+        <img
+          src="https://zeabur.com/deployed-on-zeabur-dark.svg"
+          alt="Deployed on Zeabur"
+        />
+      </a>
+    </div>
   </div>
 </template>
 
@@ -46,9 +57,9 @@
   const theme = useThemeStore()
 
   const tags = ref(['Vue', 'React', 'Angular'])
+  const isLoading = ref(true)
+  const alertTheme = ref<'success' | 'warning' | 'error' | 'info'>('success')
   let date: Date
-  let isLoading = ref(true)
-  let alertTheme = ref<'success' | 'warning' | 'error' | 'info'>('success')
 
   onMounted(() => {
     date = new Date()
