@@ -13,6 +13,12 @@
 
 ## 快速使用本模板
 
+### 一键自动部署
+
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/WMXONO?referralCode=AnotiaWang)
+
+### 手动部署
+
 ```bash
 npx -y nuxi init -t gh:AnotiaWang/tdesign-vue-nuxt-starter#nuxt3 <项目名>
 ```
