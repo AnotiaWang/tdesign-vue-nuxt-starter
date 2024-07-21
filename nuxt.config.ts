@@ -5,23 +5,29 @@ import { TDesignResolver } from 'unplugin-vue-components/resolvers'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     '@pinia/nuxt',
-    'nuxt-simple-robots',
+    '@nuxtjs/robots',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
+    '@nuxt/eslint',
   ],
+
   plugins: [],
   watch: ['./tailwind.config.js'],
+
   colorMode: {
     preference: 'light',
     classSuffix: '',
   },
+
   // Sitemap module configuration: https://nuxtseo.com/site-config/getting-started/how-it-works
   site: {
-    url: 'https://tdesign-vue-nuxt-starter.vercel.app', // FIXME: Your website URL
+    url: 'https://tdesign-vue-nuxt-starter.ataw.top', // FIXME: Your website URL
   },
+
   vite: {
     vue: {
       script: {
@@ -51,4 +57,6 @@ export default defineNuxtConfig({
       }),
     ],
   },
+
+  compatibilityDate: '2024-07-21',
 })
