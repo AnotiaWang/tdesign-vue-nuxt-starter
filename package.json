@@ -24,7 +24,7 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.12.4",
-    "tdesign-vue-next": "^1.9.7",
+    "tdesign-vue-next": "^1.9.8",
     "unplugin-auto-import": "^0.18.0",
     "unplugin-vue-components": "^0.27.3"
   }
