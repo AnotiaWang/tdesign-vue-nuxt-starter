@@ -28,6 +28,10 @@ export default defineNuxtConfig({
     url: 'https://tdesign-vue-nuxt-starter.ataw.top', // FIXME: Your website URL
   },
 
+  nitro: {
+    compressPublicAssets: { brotli: true, gzip: true },
+  },
+
   vite: {
     vue: {
       script: {
