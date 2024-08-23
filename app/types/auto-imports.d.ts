@@ -122,21 +122,3 @@ declare module 'vue' {
     readonly useThemeStore: UnwrapRef<typeof import('../hooks/useTheme')['useThemeStore']>
   }
 }
-declare module '@vue/runtime-core' {
-  interface GlobalComponents {}
-  interface ComponentCustomProperties {
-    readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
-    readonly createPinia: UnwrapRef<typeof import('pinia')['createPinia']>
-    readonly defineStore: UnwrapRef<typeof import('pinia')['defineStore']>
-    readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
-    readonly mapActions: UnwrapRef<typeof import('pinia')['mapActions']>
-    readonly mapGetters: UnwrapRef<typeof import('pinia')['mapGetters']>
-    readonly mapState: UnwrapRef<typeof import('pinia')['mapState']>
-    readonly mapStores: UnwrapRef<typeof import('pinia')['mapStores']>
-    readonly mapWritableState: UnwrapRef<typeof import('pinia')['mapWritableState']>
-    readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
-    readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>
-    readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
-    readonly useThemeStore: UnwrapRef<typeof import('../hooks/useTheme')['useThemeStore']>
-  }
-}
