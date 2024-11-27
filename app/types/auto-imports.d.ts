@@ -103,6 +103,7 @@ declare global {
   const watchPostEffect: (typeof import('vue'))['watchPostEffect']
   const watchSyncEffect: (typeof import('vue'))['watchSyncEffect']
 }
+
 // for vue template auto import
 import { UnwrapRef } from 'vue'
 declare module 'vue' {

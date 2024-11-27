@@ -10,22 +10,22 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@types/node": "^22.5.3",
-    "eslint": "^9.9.1",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1"
   },
   "dependencies": {
-    "@nuxt/devtools": "1.6.0",
-    "@nuxt/eslint": "^0.6.0",
-    "@nuxtjs/color-mode": "^3.4.4",
-    "@nuxtjs/robots": "^4.1.6",
-    "@nuxtjs/sitemap": "6.1.2",
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "@pinia/nuxt": "^0.5.4",
-    "nuxt": "^3.13.2",
-    "tdesign-vue-next": "^1.9.9",
-    "unplugin-auto-import": "^0.18.2",
+    "@nuxt/devtools": "1.6.1",
+    "@nuxt/eslint": "^0.7.2",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/robots": "^5.0.0",
+    "@nuxtjs/sitemap": "7.0.0",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@pinia/nuxt": "^0.7.0",
+    "nuxt": "^3.14.1592",
+    "tdesign-vue-next": "^1.10.4",
+    "unplugin-auto-import": "^0.18.5",
     "unplugin-vue-components": "^0.27.4"
   }
 }

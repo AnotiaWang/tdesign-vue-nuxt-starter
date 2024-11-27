@@ -39,17 +39,6 @@
       </TTagInput>
     </div>
     <TAlert :theme="alertTheme" close>{{ date }}</TAlert>
-
-    <div class="mt-auto">
-      <a
-        href="https://zeabur.com?referralCode=AnotiaWang&utm_source=AnotiaWang&utm_campaign=oss"
-      >
-        <img
-          src="https://zeabur.com/deployed-on-zeabur-dark.svg"
-          alt="Deployed on Zeabur"
-        />
-      </a>
-    </div>
   </div>
 </template>
 
