@@ -10,14 +10,9 @@
 - [Nuxt Color Mode](https://color-mode.nuxtjs.org/): 深色/浅色模式
 - ESLint + Prettier: 代码风格检查 + 美化
 - [unplugin-auto-import 和 unplugin-vue-components](https://unplugin.unjs.io): 自动导入 TDesign Vue Next 的组件以实现 [tree shaking](https://en.wikipedia.org/wiki/Tree_shaking)
+- pnpm v9
 
 ## 快速使用本模板
-
-### 一键自动部署
-
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/WMXONO?referralCode=AnotiaWang)
-
-### 手动部署
 
 ```bash
 npx -y nuxi init -t gh:AnotiaWang/tdesign-vue-nuxt-starter#nuxt3 <项目名>

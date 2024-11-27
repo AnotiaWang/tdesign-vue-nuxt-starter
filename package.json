@@ -16,14 +16,14 @@
     "eslint-plugin-prettier": "^5.2.1"
   },
   "dependencies": {
-    "@nuxt/devtools": "1.4.2",
-    "@nuxt/eslint": "^0.5.2",
+    "@nuxt/devtools": "1.6.1",
+    "@nuxt/eslint": "^0.7.2",
     "@nuxtjs/color-mode": "^3.4.2",
-    "@nuxtjs/robots": "^4.0.2",
-    "@nuxtjs/sitemap": "6.0.1",
+    "@nuxtjs/robots": "^5.0.0",
+    "@nuxtjs/sitemap": "7.0.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@pinia/nuxt": "^0.5.1",
-    "nuxt": "^3.13.2",
+    "@pinia/nuxt": "^0.7.0",
+    "nuxt": "^3.14.1592",
     "tdesign-vue-next": "^1.9.8",
     "unplugin-auto-import": "^0.18.0",
     "unplugin-vue-components": "^0.27.3"
