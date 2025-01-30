@@ -1,6 +1,5 @@
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { TDesignResolver } from 'unplugin-vue-components/resolvers'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -13,16 +12,24 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
     '@nuxt/eslint',
+    '@tdesign-vue-next/nuxt',
   ],
+
+  build: {
+    transpile: ['tdesign-vue-next'],
+  },
 
   plugins: [],
 
   tailwindcss: {
-    configPath: './app/tailwind.config',
+    configPath: './app/tailwind.config.js',
+    exposeConfig: true,
+    viewer: true,
   },
 
   colorMode: {
-    preference: 'light',
+    preference: 'system',
+    dataValue: 'theme',
     classSuffix: '',
   },
 
@@ -45,22 +52,14 @@ export default defineNuxtConfig({
     plugins: [
       Components({
         dts: 'types/components.d.ts',
-        resolvers: [
-          TDesignResolver({
-            library: 'vue-next',
-          }),
-        ],
+        resolvers: [],
       }),
       AutoImport({
         imports: ['pinia'],
         dts: 'types/auto-imports.d.ts',
         dirs: ['hooks/**', 'stores', 'constants', 'utils/**', 'layouts'],
         vueTemplate: true,
-        resolvers: [
-          TDesignResolver({
-            library: 'vue-next',
-          }),
-        ],
+        resolvers: [],
       }),
     ],
   },

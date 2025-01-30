@@ -15,7 +15,7 @@ export const useThemeStore = defineStore('theme', () => {
     if (storageValue) theme.value = storageValue as Theme
     const styleElement = document.createElement('link')
 
-    watchEffect(() => {
+    watch(theme, () => {
       localStorage.setItem(themeStorageKey, theme.value)
       styleElement.type = 'text/css'
       styleElement.rel = 'stylesheet'

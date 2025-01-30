@@ -5,13 +5,11 @@
 </template>
 
 <script setup lang="ts">
-  import 'tdesign-vue-next/es/style/index.css'
-
   const colorMode = useColorMode()
 
-  onBeforeMount(() => {
+  onMounted(() => {
     watchEffect(() => {
-      if (colorMode.preference === 'dark') {
+      if (colorMode.value === 'dark') {
         document.documentElement.setAttribute('theme-mode', 'dark')
       } else {
         document.documentElement.removeAttribute('theme-mode')
