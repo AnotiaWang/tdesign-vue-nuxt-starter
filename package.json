@@ -11,22 +11,22 @@
   },
   "devDependencies": {
     "@tdesign-vue-next/nuxt": "^0.1.5",
-    "@types/node": "^22.12.0",
-    "eslint": "^9.18.0",
-    "eslint-config-prettier": "^10.0.1",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.2"
   },
   "dependencies": {
-    "@nuxt/devtools": "2.0.0-beta.3",
-    "@nuxt/eslint": "1.0.0-rc.1",
+    "@nuxt/devtools": "2.3.0",
+    "@nuxt/eslint": "1.2.0",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/robots": "^5.1.1",
-    "@nuxtjs/sitemap": "7.2.4",
-    "@nuxtjs/tailwindcss": "^6.13.1",
-    "@pinia/nuxt": "^0.9.0",
-    "nuxt": "^3.15.4",
-    "tdesign-vue-next": "^1.10.6",
-    "unplugin-auto-import": "^19.0.0",
-    "unplugin-vue-components": "^28.0.0"
+    "@nuxtjs/robots": "^5.2.8",
+    "@nuxtjs/sitemap": "7.2.9",
+    "@nuxtjs/tailwindcss": "^6.13.2",
+    "@pinia/nuxt": "^0.10.1",
+    "nuxt": "^3.16.1",
+    "tdesign-vue-next": "^1.11.4",
+    "unplugin-auto-import": "^19.1.1",
+    "unplugin-vue-components": "^28.4.1"
   }
 }
